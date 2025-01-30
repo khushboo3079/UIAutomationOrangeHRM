@@ -12,12 +12,10 @@ Ensure you have the following installed:
 - **npm** (comes with Node.js)
 - **Playwright** and dependencies
 
----## 🚀 Setup & Installation
+---### 🚀 Setup & Installation
 
 1. Clone the repository:
-
-   ```sh
-   git clone https://github.com/your-repo/cucumber-playwright-automation.git
+   git clone [https://github.com/your-repo/cucumber-playwright-automation.git](https://github.com/khushboo3079/UIAutomationOrangeHRM.git)
    cd cucumber-playwright-automation
 ### Prerequisites
 You need to have Node.js installed on your machine.
