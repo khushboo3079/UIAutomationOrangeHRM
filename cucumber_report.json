@@ -1,0 +1,276 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "orangehrm-employee-management;testcase1:-login-to-the-application",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Testcase1: Login to the application",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 699849999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the OrangeHRM login page",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23132056899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I log in with username \"Admin\" and password \"admin123\"",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3298152000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should be redirected to the dashboard",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74163899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 107159899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "orangehrm-employee-management;testcase-2-access-an-employee-record",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "testcase 2 Access an employee record",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 311455600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am logged in to OrangeHRM",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22674908799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I navigate to the PIM module",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2767727999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I search for an employee named \"Mary  Chan\"",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 542602899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see the employee record for \"Mary  Chan\"",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 465508099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 121027499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "orangehrm-employee-management;update-an-employee-record-and-try-to-fill-empty-record",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Update an employee record and try to fill empty record",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 334903600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I am logged in to OrangeHRM",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23855587400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I navigate to the PIM module",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2643831500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I have accessed the employee record for \"Mary  Chan\"",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3502760999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I update the employee's first name to \"Mary  Chan\"",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1449632700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "the update should be successful",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 391413400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I try to save with an empty first name",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2699988899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I should see an error message \"Required\"",
+            "match": {
+              "location": "features\\step-definitions\\orangehrm.steps.js:128"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13974600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 117822400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "orangehrm-employee-management",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "OrangeHRM Employee Management",
+    "tags": [],
+    "uri": "features\\orangehrm.feature"
+  }
+]
